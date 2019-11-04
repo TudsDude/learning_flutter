@@ -1,4 +1,5 @@
 import 'package:flutter_learning_project/exercices/divisor.dart';
+import 'package:flutter_learning_project/exercices/fibonacci.dart';
 import 'package:flutter_learning_project/exercices/vector.dart';
 
 import './decomposition.dart';
@@ -9,6 +10,7 @@ class Numbers extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var decomposition = Decomposition();
+    var theFibonacci = Fibonacci();
     var thePrime = Prime();
     var theDivs = Divisors();
     var primeNumber = 2;
@@ -52,6 +54,12 @@ class Numbers extends StatelessWidget {
             textDirection: TextDirection.ltr,
             style:  TextStyle(color: Colors.white, fontSize: 18.0),
 
+
+          ),
+          Text( "The number's" +
+          theFibonacci.showFibonacci(7),
+          textDirection: TextDirection.ltr,
+            style:  TextStyle(color: Colors.white, fontSize: 18.0),
 
           ),
         ]),
